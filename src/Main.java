@@ -29,7 +29,7 @@ public class Main {
                 System.out.println(three[index]);
                 break;
             }
-            System.out.println(three[index]);
+            System.out.print(three[index] + ", ");
         }
 
         // Задание 3
@@ -37,14 +37,12 @@ public class Main {
         System.out.println("Задание 3");
 
         int [] four = {12, 15, 8, 466, 45};
-        for (int i = four.length - 1; i >= 0; i--) {
-            System.out.println(four[i]);
-            if (i > 0) {
-                System.out.println(", ");
+        for (int index = four.length - 1; index >= 0; index--) {
+            System.out.print(four[index]);
+            if (index > 0) {
+                System.out.print(", ");
             }
         }
-
-        // я не понимаю что за проблема, делаю всё по урокам и материалу из интернета, меняю только название, а ниичего не работает
 
         // Задание 4
 
@@ -52,11 +50,10 @@ public class Main {
         int [] five = {1, 2, 3};
 
         for (int index = 0; index < five.length; index++) {
-            if (index == five.length - 1) {
-                System.out.println(four[index]);
-                break;
+            if (five[index] % 2 != 0) {
+                five[index]++;
+                System.out.println(Arrays.toString(five));
             }
-            System.out.println(Arrays.toString(five));
         }
     }
 }
